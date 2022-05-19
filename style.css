@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.attribution_link {
+  text-decoration: none;
+}
