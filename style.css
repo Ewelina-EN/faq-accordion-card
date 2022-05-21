@@ -47,7 +47,6 @@ Background gradient:
 
 html {
   box-sizing: border-box;
-  font-family: "Kumbh Sans", sans-serif;
 }
 
 *,
@@ -64,7 +63,31 @@ body {
   padding: 0;
   height: 100vh;
   background: linear-gradient(-180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
 }
+
+.faq {
+  background-color: aliceblue;
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 25px;
+  padding: 50px 25px;
+}
+/* .faq_logo_section {
+}
+.faq_logo {
+  background: url(./images/bg-pattern-mobile.svg) center bottom no-repeat;
+  background-color: transparent;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 0;
+  margin-top: -157px;
+}
+
+.faq_logo_img {
+  margin-left: -13px;
+  margin-bottom: 13px;
+} */
 
 .attribution {
   position: fixed;
