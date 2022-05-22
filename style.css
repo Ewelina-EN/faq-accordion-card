@@ -1,57 +1,8 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-#### Text
-
-- Very dark desaturated blue: hsl(238, 29%, 16%)
-- Soft red: hsl(14, 88%, 65%)
-
-#### Gradient
-
-Background gradient:
-
-- Soft violet: hsl(273, 75%, 66%)
-- Soft blue: hsl(240, 73%, 65%)
-
-### Neutral
-
-#### Text
-
-- Very dark grayish blue: hsl(237, 12%, 33%)
-- Dark grayish blue: hsl(240, 6%, 50%)
-
-#### Dividers/separator
-
-- Light grayish blue: hsl(240, 5%, 91%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 12px
-
-### Font
-
-- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700 */
-
 html {
-  box-sizing: border-box;
+  font-size: 12px;
 }
 
-*,
-::after,
-::before {
+* {
   box-sizing: border-box;
 }
 
@@ -61,20 +12,21 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0;
-  height: 100vh;
   background: linear-gradient(-180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  height: 100vh;
 }
 
 .faq {
-  background-color: aliceblue;
-  min-width: 320px;
-  max-width: 320px;
+  background-color: #fff;
   border-radius: 25px;
   padding: 50px 25px;
+  margin: 150px 5% 5% 5%;
+  min-width: 320px;
+  max-width: 320px;
 }
-/* .faq_logo_section {
-}
+
 .faq_logo {
   background: url(./images/bg-pattern-mobile.svg) center bottom no-repeat;
   background-color: transparent;
@@ -87,7 +39,87 @@ body {
 .faq_logo_img {
   margin-left: -13px;
   margin-bottom: 13px;
-} */
+}
+
+.faq_heading {
+  color: hsl(237, 12%, 33%);
+  text-align: center;
+  font-size: 3.2em;
+  font-weight: 700;
+}
+
+.faq_details {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  margin: 10px 0 0 0;
+  padding: 5px 0 20px 0;
+}
+
+.faq_summary {
+  display: block;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  text-align: right;
+  color: hsl(238, 29%, 16%);
+  font-size: 1.4rem;
+}
+
+.faq_summary:hover,
+.faq_summary:active {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.faq_details[open] > .faq_summary {
+  font-weight: 700;
+}
+
+.faq_summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq_summary:after {
+  display: inline-block;
+  content: url(./images/icon-arrow-down.svg);
+  text-align: right;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-bottom: 20px;
+}
+
+details[open] .faq_summary:after {
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  content: "";
+  background-image: url(./images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  transform: scaleY(-1);
+}
+
+.faq_question {
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: 90%;
+}
+
+.faq_answer {
+  color: hsl(238, 29%, 16%);
+  line-height: 1.6;
+  margin: 10px 0 0 0;
+}
+
+.hidden {
+  display: block;
+}
+
+.visible {
+  display: none;
+}
 
 .attribution {
   position: fixed;
@@ -99,4 +131,69 @@ body {
 
 .attribution_link {
   text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .faq {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 900px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .faq_logo_section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .faq_section {
+    margin: 0 50px 0 0;
+    padding: 70px 0;
+    max-width: 350px;
+    width: 350px;
+  }
+
+  .faq_logo {
+    display: flex;
+    align-items: center;
+    background-image: url(./images/illustration-woman-online-desktop.svg),
+      url(./images/bg-pattern-desktop.svg);
+    background-position: -75px center, -571px -270px;
+    background-size: 100%, 200%;
+    height: 100%;
+    min-width: 300px;
+    margin: 0;
+    padding: 0;
+    width: 525px;
+    max-width: 500px;
+    position: relative;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+    position: absolute;
+    margin-top: 120px;
+    left: -80px;
+  }
+
+  .faq_heading {
+    text-align: left;
+  }
+
+  .faq_details {
+    margin: 10px 0 0 0 0;
+    padding: 0;
+  }
+
+  .faq_answer {
+    margin: 0 0 10px 0;
+  }
 }
