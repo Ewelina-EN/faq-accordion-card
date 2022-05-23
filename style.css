@@ -1,7 +1,3 @@
-html {
-  font-size: 12px;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -13,9 +9,8 @@ body {
   justify-content: center;
   padding: 0;
   background: linear-gradient(-180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 400;
   height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .faq {
@@ -42,16 +37,14 @@ body {
 }
 
 .faq_heading {
-  color: hsl(237, 12%, 33%);
+  color: hsl(238, 29%, 16%);
   text-align: center;
-  font-size: 3.2em;
-  font-weight: 700;
+  padding: 20px 0 20px 0;
 }
 
 .faq_details {
   border-bottom: 1px solid hsl(240, 5%, 91%);
-  margin: 10px 0 0 0;
-  padding: 5px 0 20px 0;
+  margin: 20px;
 }
 
 .faq_summary {
@@ -61,7 +54,6 @@ body {
   position: relative;
   text-align: right;
   color: hsl(238, 29%, 16%);
-  font-size: 1.4rem;
 }
 
 .faq_summary:hover,
@@ -71,7 +63,7 @@ body {
 }
 
 .faq_details[open] > .faq_summary {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .faq_summary::-webkit-details-marker {
@@ -100,17 +92,17 @@ details[open] .faq_summary:after {
 
 .faq_question {
   display: inline-block;
-  left: 0;
+  left: -20px;
   position: absolute;
   text-align: left;
   top: 0;
-  width: 90%;
+  width: 100%;
 }
 
 .faq_answer {
   color: hsl(238, 29%, 16%);
-  line-height: 1.6;
   margin: 10px 0 0 0;
+  font-size: 12px;
 }
 
 .hidden {
