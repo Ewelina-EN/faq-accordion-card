@@ -45,35 +45,21 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+For the first time I used an HTML details and summary element:
 
 ```html
-<h1 class="faq_heading">FAQ</h1>
 <details class="faq_details">
   <summary class="faq_summary">
-    <span class="faq_question"> How many team members can I invite?</span>
+    <!-- <span class="faq_question"> How many team members can I invite?</span> -->
   </summary>
 </details>
 ```
 
+and learned that the selector details[open] can be used to style the element which is open:
+
 ```css
-proud-of-this-css .faq_details[open] > .faq_summary {
+.faq_details[open] > .faq_summary {
   font-weight: bold;
-}
-
-.faq_summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq_summary:after {
-  display: inline-block;
-  content: url(./images/icon-arrow-down.svg);
-  text-align: right;
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding-bottom: 20px;
 }
 
 details[open] .faq_summary:after {
