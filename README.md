@@ -12,7 +12,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -50,7 +49,7 @@ For the first time I used an HTML details and summary element:
 ```html
 <details class="faq_details">
   <summary class="faq_summary">
-    <!-- <span class="faq_question"> How many team members can I invite?</span> -->
+    <span class="faq_question"> How many team members can I invite?</span>
   </summary>
 </details>
 ```
@@ -76,12 +75,7 @@ details[open] .faq_summary:after {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+In future project I want to focusing on optimize my CSS code. For me, it was an interesting experience to create a project without using JavaScript.
 
 ## Author
 
