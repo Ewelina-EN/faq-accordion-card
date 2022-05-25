@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion card solution.
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects. I complete the challenge without using JavaScript. On my GitHub profile you can find a second version of this project using JavaScript.
+This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects. I completed the challenge without using JavaScript. On my GitHub profile you can find a second version of this project using JavaScript.
 
 ## Table of contents
 
@@ -75,7 +75,7 @@ details[open] .faq_summary:after {
 
 ### Continued development
 
-In future project I want to focusing on optimize my CSS code. For me, it was an interesting experience to create a project without using JavaScript.
+In future project I want to focus on optimize my CSS code. For me, it was an interesting experience to create a project without using JavaScript.
 
 ## Author
 
